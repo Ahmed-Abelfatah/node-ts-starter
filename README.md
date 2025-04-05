@@ -5,7 +5,7 @@
 For creating and installing a new starter project just run the following command
 
 ```js
-npx  @a.abdelfatah/nodejs-ts-starter [project-name]
+npx  @ahmed.abdelfatah/node-ts-starter [project-name]
 cd [project-name]
 ```
 
