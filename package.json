@@ -1,0 +1,49 @@
+{
+  "name": "@ahmed.abdelfatah/node-ts-starter",
+  "version": "1.0.5",
+  "description": "Welcome to our npm package! Our package is designed to provide you with a solid foundation for developing new projects using nodejs and typescript. By utilizing the best practices and standards, you can rest assured that your project will be developed with the utmost quality and maintainability in mind.Our package includes a variety of tools and features that are essential for modern development. This includes robust documentation, comprehensive testing tools, and a range of configurable options that enable you to customize your project to meet your specific needs.",
+  "main": "index.js",
+  "bin": "./bin/cli.js",
+  "author": "EngAhmedMahmoud",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "npx nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "yarn run build && node ./build/app.js",
+    "check-types": "tsc --pretty --noEmit",
+    "lint": "eslint . --ext .ts",
+    "lint-fix": "eslint . --ext .ts --fix",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "prettier-watch": "onchange 'src/**/*.ts' -- prettier --write {{changed}}",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test-all": "yarn run prettier-format && yarn run lint && yarn run check-types && yarn run test && yarn run build",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.14.0",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.6",
+    "husky": "^9.1.7",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "onchange": "^7.1.0",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EngAhmedMahmoud/nodejs-ts-starter"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
