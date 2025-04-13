@@ -1,6 +1,6 @@
 {
   "name": "@ahmed.abdelfatah/node-ts-starter",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "Welcome to our npm package! Our package is designed to provide you with a solid foundation for developing new projects using nodejs and typescript. By utilizing the best practices and standards, you can rest assured that your project will be developed with the utmost quality and maintainability in mind.Our package includes a variety of tools and features that are essential for modern development. This includes robust documentation, comprehensive testing tools, and a range of configurable options that enable you to customize your project to meet your specific needs.",
   "main": "index.js",
   "bin": "./bin/cli.js",
@@ -41,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/EngAhmedMahmoud/nodejs-ts-starter"
+    "url": "https://github.com/Ahmed-Abelfatah/node-ts-starter"
   },
   "dependencies": {
     "dotenv": "^16.4.7"
