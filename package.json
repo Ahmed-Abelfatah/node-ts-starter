@@ -6,6 +6,9 @@
   "bin": "./bin/cli.js",
   "author": "EngAhmedMahmoud",
   "license": "MIT",
+  "publishConfig": {
+    "access": "restricted"
+  },
   "scripts": {
     "start:dev": "npx nodemon",
     "build": "rimraf ./build && tsc",
